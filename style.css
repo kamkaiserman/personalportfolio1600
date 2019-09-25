@@ -1,0 +1,173 @@
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #EFF8E2; 
+}
+::-moz-selection {
+  background: #EFF8E2; 
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #58BC82;
+}
+.highlight {
+  padding: 5px;
+  background-color: green;
+}
+#navbar {  
+  overflow: hidden;
+  background-color: #EFF8E2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#navbar a {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#navbar a:hover {
+  letter-spacing: 5px;
+  background-color: #58BC82;
+  color: white;
+}
+#welcome-section {
+  padding: 200px 20vw 10vw 20vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/280h/KQY7DIBID3.jpg");
+  color: #EFF8E2;
+}
+@keyframes bounce {
+  0% { top: 0; } 50% { top: 10px; } 100% { top: 0; }
+}
+#arrow-down {
+  transform:scale(1,0.7);
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  text-align: center;
+  animation: bounce 3s infinite;
+  margin-top: 80px;
+  font-size: 60px;
+}
+#projects-divider {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #58BC82;
+  background-color: #EFF8E2;
+  margin: 0px;
+  padding: 20px;
+  transition: 1s;
+}
+#projects-divider:hover {
+  letter-spacing: 20px;
+}
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #58BC82;
+  padding: 0px;
+  margin: 0px;
+}
+#projects a {
+  text-transform: none;
+}
+.project-tile {
+  flex-grow: 1;
+  margin: 0px;
+  max-width: 33.333333vw;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/280h/CHRGCWTWUG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  transition: 0.5s;
+}
+.project-tile:hover {
+  opacity: 0.7;
+  z-index:2001;
+}
+.tile-content {
+  padding: 40px 50px;
+  color: #EFF8E2;
+}
+.tile-content h3 {
+  color: #EFF8E2;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 50px;
+  background-color: #58BC82;
+  color: #EFF8E2;
+}
+#contact a {
+  color: #58BC82;
+  background-color: #EFF8E2;
+  padding: 30px 40px;
+  margin: 20px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+#contact a:hover {
+  padding: 40px 50px;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+footer {
+  padding: 50px;
+  text-align: center;
+  background-color: #EFF8E2;
+  transition: 1s;
+}
+footer:hover {
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  .project-tile {
+    max-width: 100vw; 
+  }
+  #navbar a {
+    min-height: 40px 20px 20px 30px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  #navbar a:hover {
+    letter-spacing: 0px;
+  }
+  .highlight {
+  line-height: 35px;
+  }
+}
