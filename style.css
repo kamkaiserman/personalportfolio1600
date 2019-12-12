@@ -123,12 +123,13 @@ a {
 
 #projects a {
     text-transform: none;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .project-tile {
     margin-right: 0px;
     max-width: 33.333333vw;
-    min-width: 33.333333vw;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
@@ -145,11 +146,15 @@ a {
 }
 
 #tile-two {
-    background-image: url("starBackground.jpg");
+    background-image: url("https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2016/01/star-destroyer_0.jpg?itok=JBlJeskc");
 }
 
 #tile-three {
-    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/YCPR5MQTRP.jpg");
+    background-image: url("https://www.geek.com/wp-content/uploads/2018/11/detective-pikachu-top-625x352.png");
+}
+
+#tile-four {
+    background-image: url("https://media2.fdncms.com/stranger/imager/u/large/41929752/1573162564-gettyimages-836453698.jpg");
 }
 
 .tile-content {
